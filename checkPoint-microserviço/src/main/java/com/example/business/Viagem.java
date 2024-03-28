@@ -7,29 +7,37 @@ public class Viagem{
     private double velocidadeMedia = 100;
  
 
-    public double calculoTempoViagem(){
+    public String getPontoDeChegada() {
+		return pontoDeChegada;
+	}
 
-        double resultado;
+	public void setPontoDeChegada(String pontoDeChegada) {
+		this.pontoDeChegada = pontoDeChegada;
+	}
 
-        resultado = distancia / velocidadeMedia;
+	public String getPontoDePartida() {
+		return pontoDePartida;
+	}
 
-        return resultado;
-    }
+	public void setPontoDePartida(String pontoDePartida) {
+		this.pontoDePartida = pontoDePartida;
+	}
 
-    public String converterTempo(){
+	public double getDistancia() {
+		return distancia;
+	}
 
-        double minutos = calculoTempoViagem();
-        int horas = (int) calculoTempoViagem();
-        minutos = minutos % 1;
-        double fracao = 0.6;
+	public void setDistancia(double distancia) {
+		this.distancia = distancia;
+	}
 
-        double resultadoMin = minutos * fracao;
-        resultadoMin = resultadoMin * 100;
-        
-        String tempoFormatado = horas+"h"+(int)resultadoMin;
-        return tempoFormatado;
-    }
-    
+	public double getVelocidadeMedia() {
+		return velocidadeMedia;
+	}
+
+	public void setVelocidadeMedia(double velocidadeMedia) {
+		this.velocidadeMedia = velocidadeMedia;
+	}
 
 }
 
