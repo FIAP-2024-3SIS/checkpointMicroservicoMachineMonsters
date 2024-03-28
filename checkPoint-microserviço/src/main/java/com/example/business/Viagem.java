@@ -5,8 +5,14 @@ public class Viagem{
     private String pontoDePartida;
     private double distancia;
     private double velocidadeMedia;
-    private
-    private
+    Onibus onibus;
+    Cliente cliente;
+
+    public double calculoTempoViagem(){
+
+
+
+    }
     
 
 }
