@@ -1,4 +1,4 @@
-
+package com.example.business;
 public class Viagem{
 
     private String pontoDeChegada;
@@ -19,13 +19,16 @@ public class Viagem{
 
     public String converterTempo(){
 
-        double minutos = 0.6;
+        double minutos = 60;
+        double fracao = 0.6;
 
-        delta = calculoTempoViagem();
+        double  delta = calculoTempoViagem();
 
-        String resultado = delta * 0.6;
+        double resultado = delta * fracao;
 
-        
+        String tst = " ";
+        return tst;
+
 
     }
     
