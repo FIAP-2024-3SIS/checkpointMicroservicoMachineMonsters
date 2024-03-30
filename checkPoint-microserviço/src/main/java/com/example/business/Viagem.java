@@ -3,7 +3,7 @@ public class Viagem{
 
     private String pontoDeChegada;
     private String pontoDePartida;
-    private double distancia = 160;
+    private double distancia = 260;
     private double velocidadeMedia = 100;
  
 
